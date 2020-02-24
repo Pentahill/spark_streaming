@@ -1,5 +1,12 @@
 提交任务：
-    spark-submit --master local[2] --py-files E:\spark-2.4.3-bin-hadoop2.7\examples\src\main\python\streaming\network_wordcount.py localhost 9999
+    (1) spark-submit --master local[2] --py-files D:\ws\spark_streaming\streaming\src\python\Flume.py
+    (2) 集成flume
+    // 注意scala版本
+    spark-submit --master local[2] --jars E:\spark-streaming-flume-assembly_2.11-2.4.3.jar D:\ws\spark_streaming\streaming\src\python\Flume.py
+    (3) 集成kafka
+        1) 启动zk
+        2) 启动kafka
+        3) 创建topic
 
 Context:
     Spark SQL: SQLContext/HiveContext
